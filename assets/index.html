@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DHS.COM.UA</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+</head>
+<body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <div class="header-page-logo"></div>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="header-main-menu nav navbar-nav">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Товары <i class="glyphicon glyphicon-arrow-down"></i> </a></li>
+                            <li><a href="#">Блог</a></li>
+                    </ul>
+                    <ul class="header-main-menu nav navbar-nav navbar-right">
+                        <li><a href="#" class="btn-about-us">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="page-slider">
+                <div class="swiper-container">
+                    <div
+                            class="parallax-bg"
+                            style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)"
+                            data-swiper-parallax="-23%">
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-hash="slide1" style="background:url(img/slides/1.jpg) no-repeat 50% 50%; background-size: cover"></div>
+                        <div class="swiper-slide" data-hash="slide2" style="background:url(img/slides/2.jpg) no-repeat 50% 50%"></div>
+                        <div class="swiper-slide" style="background:url(img/slides/3.png) no-repeat 50% 50%; background-size: cover">
+                            <!-- Each slide has parallax title -->
+                            <div class="title" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Slide 1</div>
+                            <!-- Parallax subtitle -->
+                            <div class="subtitle" data-swiper-parallax="-600" data-swiper-parallax-duration="1000">Subtitle</div>
+                            <!-- And parallax text with custom transition duration -->
+                            <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                                <p>Lorem ipsum dolor sit amet, ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationType: 'progress',
+                paginationClickable: true,
+                loop: true,
+                parallax: true,
+                grabCursor: true
+            });
+        </script>
+</body>
+</body>
+</html>

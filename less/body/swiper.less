@@ -1,0 +1,32 @@
+@import "../core";
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  background-color: @back-color !important;
+}
+
+.swiper-pagination-progress .swiper-pagination-progressbar {
+  background-color: @link-color !important;
+}
+
+.swiper-slide {
+  padding: 25px 50px;
+  .title {
+    font-size: 78px;
+    color: @link-color;
+  }
+
+  .subtitle {
+    font-size: 45px;
+    color: spin(@back-color, 50%);
+  }
+
+  .text {
+    font-size: 25px;
+    color: @main-dark-color;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../core";
+@name: header;
+@bg-path: '../img/logo_.png';
+
+
+.@{name}-page-logo {
+    float: left;
+    display: block;
+    content: '';
+    width: 79px;
+    margin-left: 15px;
+    margin-right: 75px;
+    height: 64px;
+    background: url(@bg-path) no-repeat 0% 50%;
+}
+
+.@{name}-main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: block;
+
+        &:nth-last-child(1) a {
+            border: none;
+        }
+
+        a.btn-about-us {
+            position: relative;
+            color: #fff !important;
+            background: -webkit-linear-gradient(spin(@link-color, 5%), darken(@link-color, 10%));;
+            border-radius: 5px;
+            padding: 8px 25px;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: all .6s ease-out;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.20);
+        }
+
+        a.btn-about-us:hover {
+            background: -webkit-linear-gradient(spin(@link-color, 5%), darken(@link-color, 10%));
+            color: #fff !important;
+        }
+
+        a.btn-about-us:after {
+            background: rgba(255, 255, 255, 0.3) none repeat scroll 0% 0%;
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 300%;
+            z-index: 1;
+            right: 0px;
+            top: 0px;
+            margin: -30px 5px 0px -50px;
+            transform-origin: 0px 0px 0px;
+            transform: rotate(-30deg);
+            transition: all 0.6s ease 0s;
+        }
+
+        a.btn-about-us:hover:after {
+            right: -40px;
+        }
+    }
+
+    li a {
+        position: relative!important;
+        top: 15px!important;
+        display: block!important;
+        padding: 10px 25px!important;
+        border-right: 1px solid @back-color;
+        color: @main-color;
+        transition: color .6s ease-out;
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+            color: @link-color !important;
+        }
+
+        i {
+            font-size: 12px;
+            color: @main-dark-color;
+        }
+    }
+}
+

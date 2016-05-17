@@ -1,0 +1,178 @@
+@import "../core";
+
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-header {
+  margin: 0 0 50px;
+
+  h2 {
+    font-weight: 100;
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 55px;
+  }
+}
+
+.section-description {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+}
+
+.portfolio-filter {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 3px 8px;
+  }
+
+  li a {
+    background: #f4f4f4;
+    color: #333;
+    display: block;
+    font-size: 16px;
+    padding: 5px 15px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+
+  li a.active, li a:hover {
+    background: @link-color;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#isotope {
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio-item article {
+  background: #f4f4f4;
+  margin: 0 0 30px;
+  opacity: 0;
+  padding-bottom: 15px;
+  text-align: center;
+
+  h4 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .tags {
+    color: #999;
+  }
+
+  .image-container {
+    height: 0;
+    padding-bottom: 65%;
+    overflow: hidden;
+    position: relative;
+
+    .image {
+      position: absolute;
+      left: 10%;
+      top: 0;
+      width: 80%;
+      height: 100%;
+
+      a {
+        color: #fff;
+        display: block;
+
+        img {
+          max-width: 100%;
+          vertical-align: top;
+        }
+      }
+
+    }
+  }
+}
+
+
+.forSearch {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+
+  #search-form {
+    display: table-cell;
+    padding: 10px 15px;
+    outline-color: @link-color;
+    position: relative;
+
+    & + label {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    & + label::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -2.2em;
+      margin: auto;
+      height: 20px;
+      width: 20px;
+      color: @main-dark-color;
+      font-family: 'Glyphicons Halflings';
+      content: "\e003";
+    }
+
+    &:hover + label:before, &:focus + label:before {
+      color: @link-color;
+    }
+
+    &:hover, &:focus {
+      border-color: @link-color;
+      color: @link-color;
+    }
+  }
+
+
+}
+
+
+
+::-webkit-scrollbar {
+  background: @back-color;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: @link-color;
+}

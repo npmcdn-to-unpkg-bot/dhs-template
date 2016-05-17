@@ -14,10 +14,18 @@
 }
 
 .swiper-slide {
-  padding: 25px 50px;
+  padding: 35px 50px;
+  font-family: @main-font;
+  text-shadow: 1px 2px 5px black;
+  font-size: 78px;
+  text-transform: uppercase;
+
   .title {
-    font-size: 78px;
-    color: @link-color;
+    color: spin(@back-color, 10%);
+
+    &-red {
+      color: @link-color;
+    }
   }
 
   .subtitle {

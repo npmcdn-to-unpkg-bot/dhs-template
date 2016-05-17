@@ -19,7 +19,6 @@
 
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-
                 <div class="navbar-header">
                     <div class="header-page-logo"></div>
 
@@ -47,24 +46,24 @@
 
         <section class="page-slider">
                 <div class="swiper-container">
-                    <div
-                            class="parallax-bg"
-                            style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)"
-                            data-swiper-parallax="-23%">
-                    </div>
-
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-hash="slide1" style="background:url(img/slides/1.jpg) no-repeat 50% 50%; background-size: cover"></div>
-                        <div class="swiper-slide" data-hash="slide2" style="background:url(img/slides/2.jpg) no-repeat 50% 50%"></div>
-                        <div class="swiper-slide" style="background:url(img/slides/3.png) no-repeat 50% 50%; background-size: cover">
+                        <div class="swiper-slide" style="background:url('img/slides/1.jpg') no-repeat 50% 50%; background-size: cover">
                             <!-- Each slide has parallax title -->
-                            <div class="title" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Slide 1</div>
+                            <div class="title-red" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Настольный теннис</div>
                             <!-- Parallax subtitle -->
-                            <div class="subtitle" data-swiper-parallax="-600" data-swiper-parallax-duration="1000">Subtitle</div>
+                            <div class="subtitle" data-swiper-parallax="-600" data-swiper-parallax-duration="1000">Вид спорта</div>
                             <!-- And parallax text with custom transition duration -->
                             <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-                                <p>Lorem ipsum dolor sit amet, ...</p>
+                                <p>Основанная на перекидывании специального мяча...</p>
                             </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url('img/slides/3.png') no-repeat 50% 50%; background-size: cover">
+                            <!-- Each slide has parallax title -->
+                            <div class="title-red" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Мы чемпионы</div>
+                            <!-- Parallax subtitle -->
+                            <div class="subtitle" data-swiper-parallax="-600" data-swiper-parallax-duration="1000">Соревнования сильнейших...</div>
+                            <!-- And parallax text with custom transition duration -->
+
                         </div>
                     </div>
 
@@ -72,22 +71,107 @@
                 </div>
         </section>
 
+        <!-- ITEMS LIST-->
+
+        <section class="section" id="items-list">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Каталог товаров</h2>
+                    <div class="section-description">Взгляните на наши товары!</div>
+                </header>
+
+                <ul id="portfolio-filter" class="portfolio-filter">
+                    <li><a href="#" data-filter-by="*" class="active">Все</a></li>
+                    <li><a href="#" data-filter-by=".blade">Лезвие</a></li>
+                    <li><a href="#" data-filter-by=".rubber" class="">Резина</a></li>
+                    <li><a href="#" data-filter-by=".racket">Ракетка</a></li>
+                    <li><a href="#" data-filter-by=".ball">Мяч</a></li>
+                    <li><a href="#" data-filter-by=".table_court">Стол</a></li>
+                    <li><a href="#" data-filter-by=".courteq">Суд. Оборудование</a></li>
+                    <li><a href="#" data-filter-by=".accessories">Мязь</a></li>
+                    <li><a href="#" data-filter-by=".apparel">Униформа</a></li>
+                </ul>
+
+                <div class="forSearch">
+                    <input type="text" class="search-form" id="search-form" placeholder="Поиск..">
+                    <label for="search-form">&nbsp;</label>
+                </div>
+
+                <div id="isotope" class="row" style="position: relative; height: 644px;">
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 blade">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/blade/1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">Hurrican Long V5</h4>
+                            <div class="tags">Была ракеткой знаменитого...</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 ball">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/ball/1.png" height="250px" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">Samsung 40MM table tennis (six-pack)</h4>
+                            <div class="tags">Первый 40ММ мяч мирового класса</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 apparel">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/uniform/1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">GA201</h4>
+                            <div class="tags">Жаккардовые ткани, мгновенное впитываемость</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 table_court">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/table/1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">Suzhou Rainbow</h4>
+                            <div class="tags">Стол который использовался в 2015 на Чемпионате Мира</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+                </div>
+            </div>
+        </section>
+
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 
+        <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                pagination: '.swiper-pagination',
-                paginationType: 'progress',
-                paginationClickable: true,
-                loop: true,
-                parallax: true,
-                grabCursor: true
-            });
-        </script>
 </body>
 </body>
 </html>

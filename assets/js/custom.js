@@ -75,6 +75,20 @@ var all = {
                 //анимируем переход на расстояние - top за 1500 мс
                 $('body,html').animate({scrollTop: top}, 1000);
             });
+        },
+
+        wow: function() {
+            var wow = new WOW(
+                {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       false,       // default
+                    live:         true        // default
+                }
+            );
+
+            wow.init();
         }
     }
 }
@@ -86,6 +100,7 @@ var init = {
         all.listitems.isotope();
         all.listitems.swiper();
         all.listitems.scroll();
+        all.listitems.wow();
     }
 };
 

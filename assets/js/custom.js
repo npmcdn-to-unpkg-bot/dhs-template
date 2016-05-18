@@ -52,6 +52,8 @@ var all = {
                 pagination: '.swiper-pagination',
                 paginationType: 'progress',
                 paginationClickable: true,
+                speed: 1500,
+                autoplay: 6000,
                 loop: true,
                 parallax: true,
                 grabCursor: true
@@ -69,9 +71,12 @@ var all = {
                 //узнаем высоту от начала страницы до блока на который ссылается якорь
                 if(id == "#home") {
                     var top = $(id).offset().top + -80;
-                } else {
-                    var top = $(id).offset().top;
+                } else if(id == "#about-us") {
+                    var top = $(id).offset().top + -60;
                 }
+                else {
+                    var top = $(id).offset().top
+                };
                 //анимируем переход на расстояние - top за 1500 мс
                 $('body,html').animate({scrollTop: top}, 1000);
             });
@@ -89,6 +94,17 @@ var all = {
             );
 
             wow.init();
+        },
+
+        carousel: function() {
+            $(".owl-carousel").owlCarousel({
+                items:5,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:2500,
+                autoplayHoverPause:true
+            });
         }
     }
 }
@@ -101,7 +117,10 @@ var init = {
         all.listitems.swiper();
         all.listitems.scroll();
         all.listitems.wow();
+        all.listitems.carousel();
     }
 };
 
 $(document).ready(init.ready);
+
+

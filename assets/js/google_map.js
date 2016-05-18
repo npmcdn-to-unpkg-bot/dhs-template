@@ -8,8 +8,8 @@ var google = {
                 var mapOptions = {
                     center: {lat: 48.46034404, lng: 35.021935},
                     zoom: 16,
-                    draggable: false,
-                    fullscreenControl: false,
+                    draggable: true,
+                    fullscreenControl: true,
                     scrollwheel: false,
                     signInControl: false,
                     styles: mapStyles,
@@ -22,7 +22,7 @@ var google = {
                 var marker = new google.maps.Marker({
                     position: {lat: 48.46034404, lng: 35.03243923},
                     map: map,
-                    icon: 'img/icons/dhs-rocket.png'
+                    animation: google.maps.Animation.DROP,
                 });
 
                 var infowindow = new google.maps.InfoWindow({

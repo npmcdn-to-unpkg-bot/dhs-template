@@ -1,0 +1,55 @@
+@import "../core";
+
+.about-us {
+  font-family: @main-font;
+  background: #f1f1f1;
+  border-top: 5px solid #ff6878;
+  border-bottom: 5px solid #e7e7e7;
+  background-size: cover;
+
+  p {
+    color: @main-color;
+    font-size: 16px;
+  }
+
+  .page-header {
+    margin: 0 0 10px 0;
+    border-bottom: none;
+    position: relative;
+
+    h1 {
+      text-transform: uppercase;
+      color: @main-color;
+    }
+
+
+    &:before {
+      content: "\f164";
+      font: normal normal normal 14px/1 FontAwesome;
+      color: @link-color;
+      font-size: 45px;
+      display: block;
+      height: 75px;
+      width: 55px;
+      position: absolute;
+      left: -71px;
+      top: 0px;
+    }
+
+    &:after {
+      content: "";
+      background: @link-color;
+      height: 5px;
+      display: block;
+      width: 50px;
+      margin-top: 4px;
+    }
+  }
+
+  .padding-about-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+}
+

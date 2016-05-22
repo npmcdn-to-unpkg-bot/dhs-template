@@ -1,0 +1,112 @@
+@import "../core";
+
+.news {
+  padding: 40px 0 15px;
+  background: @main-color;
+
+  .section-header {
+    h2 {
+      color: white;
+    }
+  }
+
+  .item-news {
+    color: @main-dark-color;
+
+    .news-img {
+      position: relative;
+      display: block;
+      margin-bottom: 35px;
+
+      .time-stamp {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 60px;
+          height: 60px;
+          padding: 5px 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 1;
+          font-family: @main-font;
+          background: @link-color;
+          overflow: hidden;
+
+        span.time-date {
+          font-size: 30px;
+          font-weight: 600;
+        }
+
+        span:last-child {
+          display: block;
+          position: relative;
+          padding-top: 3px;
+
+          &:before {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 30px;
+            margin-left: -15px;
+            border-top: 1px solid #fff;
+            content: "";
+          }
+        }
+
+
+      }
+    }
+    .news-content {
+      h3 {
+        margin: 0 0 15px;
+        font-size: 20px;
+        font-family: @main-font;
+        font-weight: 600;
+
+        .news-name {
+          color: white;
+          text-decoration: none;
+          transition: color .6s ease-out;
+
+          &:hover {
+            color: lighten(@link-color, 50%);
+          }
+        }
+      }
+      .news-info {
+        color: @main-dark-color;
+        font-style: italic;
+        font-size: 12px;
+        margin-bottom: 5px;
+        .date {
+          display: inline-block;
+          position: relative;
+          padding-right: 7px;
+          margin-right: 7px;
+        }
+      }
+
+      .news-button {
+        background: @main-color;
+        border: 1px solid @back-color;
+        border-radius: 0;
+        color: darken(@back-color, 30%);
+        text-transform: uppercase;
+        text-shadow: none;
+        box-shadow: none;
+        display: block;
+        margin: 40px 0px;
+        transition: all .6s ease-in;
+        &:hover {
+          @hover-color: #dd5f65;
+
+          border: 1px solid @hover-color;
+          background: @hover-color;
+          color: white;
+        }
+      }
+    }
+  }
+}

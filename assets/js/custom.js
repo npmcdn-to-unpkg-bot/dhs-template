@@ -73,6 +73,8 @@ var all = {
                     var top = $(id).offset().top + -80;
                 } else if(id == "#about-us") {
                     var top = $(id).offset().top + -60;
+                } else if(id == "#news") {
+                    var top = $(id).offset().top + -60;
                 }
                 else {
                     var top = $(id).offset().top

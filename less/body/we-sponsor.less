@@ -1,0 +1,35 @@
+@import "../core";
+
+.we-sponsor {
+  padding: 60px 60px;
+  background: #f7f7f7;
+  .main-title {
+    color: darken(@main-dark-color, 50%);
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+
+  .list-sponsors {
+    padding: 50px 0;
+    overflow: hidden;
+
+    .owl-stage {
+      transition: all 800ms ease !important;
+    }
+
+    .item {
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+      img {
+        width: 168px;
+        height: 90px;
+        vertical-align: middle;
+        border: 0;
+      }
+    }
+  }
+}

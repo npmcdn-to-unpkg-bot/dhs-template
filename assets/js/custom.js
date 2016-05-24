@@ -9,10 +9,15 @@ var all = {
             var $container = $('#isotope');
             var qsRegex;
 
+
+            var selector = $('#portfolio-filter').find('a').attr('data-filter-by');
+
             $container.isotope({
                 itemSelector: '.portfolio-item',
-                layoutMode: 'fitRows'
+                layoutMode: 'fitRows',
+                filter: selector
             });
+
 
             $('#portfolio-filter').find('a').on('click', function () {
                 var selector = $(this).attr('data-filter-by');
@@ -22,6 +27,7 @@ var all = {
 
                 return false;
             });
+
 
             // quick search regex
              var $quicksearch = $('#search-form').keyup( debounce( function() {
@@ -51,13 +57,56 @@ var all = {
             var swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationType: 'progress',
-                paginationClickable: true,
                 speed: 1500,
                 autoplay: 6000,
-                loop: true,
-                parallax: true,
-                grabCursor: true
+                loop: true
             });
+
+            //swiper.on("click", function() {
+            //    alert("hello!");
+            //})
+
+
+            var vid = $('#video'),
+                slide = $('#slide1'),
+                played = false;
+
+
+            function hideOverlay() {
+                if(!played) {
+                    played = true;
+                    vid.trigger('play');
+                    swiper.lockSwipes()
+                } else {
+                    played = false;
+                    vid.trigger('pause');
+                    swiper.unlockSwipes()
+                }
+            }
+
+            function showOverlay() {
+                // this check is to differentiate seek and actual pause
+                if (vid.onreadystatechange === 4) {
+                    alert("true");
+                    //slide.css("display", "block");
+                    played = false;
+                    vid.trigger('pause');
+                }
+            }
+
+            vid.on('pause', showOverlay);
+            slide.on('click', hideOverlay);
+
+            //slide.on("click", function() {
+            //    if(!played) {
+            //        played = true;
+            //        vid.trigger('play');
+            //    } else {
+            //        played = false;
+            //        vid.trigger('pause');
+            //    }
+            //});
+
         },
 
         scroll: function() {
@@ -74,6 +123,9 @@ var all = {
                 } else if(id == "#about-us") {
                     var top = $(id).offset().top + -60;
                 } else if(id == "#news") {
+                    var top = $(id).offset().top + -60;
+                }
+                else if(id == "#our-partners") {
                     var top = $(id).offset().top + -60;
                 }
                 else {

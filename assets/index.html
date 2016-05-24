@@ -47,10 +47,15 @@
             </div>
         </nav>
 
-        <!-- HOME START-->
         <section id="home" class="page-slider">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="slide1">
+                            <video loop muted class="fullscreen-bg__video" poster="img/slides/4.jpg" id="video">
+                                <source src="video/8c80a4bb40fbd65a56a327e9ca8ccd0b.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
                         <div class="swiper-slide" style="background:url('img/slides/1.jpg') no-repeat 50% 50%; background-size: cover">
                             <!-- Each slide has parallax title -->
                             <div class="title-red" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Настольный теннис</div>
@@ -61,6 +66,7 @@
                                 <p>Основанная на перекидывании специального мяча...</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide" style="background:url('img/slides/3.png') no-repeat 50% 50%; background-size: cover">
                             <!-- Each slide has parallax title -->
                             <div class="title-red" data-swiper-parallax="-500" data-swiper-parallax-duration="800">Мы чемпионы</div>
@@ -69,37 +75,12 @@
                             <!-- And parallax text with custom transition duration -->
 
                         </div>
-
-                        <div class="swiper-slide" style="background:url('img/slides/3.png') no-repeat 50% 50%; background-size: cover">
-
-                        </div>
                     </div>
 
                     <div class="swiper-pagination"></div>
                 </div>
         </section>
-        <!-- HOME END-->
 
-
-        <section id="about-us" class="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-xs-12 col-sm-8 padding-about-us">
-                        <div class="page-header">
-                            <h1>Немного о нашей компании..</h1>
-                        </div>
-                        <p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Таким образом рамки и место обучения кадров требуют определения и уточнения новых предложений.</p>
-                    </div>
-                    <div class="col-md-3 col-xs-12 col-sm-5 hidden-xs row">
-                        <div>
-                            <img src="img/ball_.png" style="margin-top: 50px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ITEMS LIST-->
         <section class="section" id="items-list">
             <div class="container">
                 <header class="section-header">
@@ -108,7 +89,7 @@
                 </header>
 
                 <ul id="portfolio-filter" class="portfolio-filter">
-                    <li><a href="#" data-filter-by="*" class="active">Все</a></li>
+                    <li><a href="#" data-filter-by=".hot" class="active">Новинки</a></li>
                     <li><a href="#" data-filter-by=".blade">Лезвие</a></li>
                     <li><a href="#" data-filter-by=".rubber" class="">Резина</a></li>
                     <li><a href="#" data-filter-by=".racket">Ракетка</a></li>
@@ -126,7 +107,7 @@
 
                 <div id="isotope" class="row" style="position: relative; height: 644px;">
                     <!-- Item -->
-                    <div class="portfolio-item col-md-4 col-xs-6 blade racket">
+                    <div class="portfolio-item col-md-4 col-xs-6 blade racket hot">
                         <article class="animated fadeIn">
                             <div class="image-container">
                                 <div class="image">
@@ -142,7 +123,7 @@
                     <!-- // Item -->
 
                     <!-- Item -->
-                    <div class="portfolio-item col-md-4 col-xs-6 ball">
+                    <div class="portfolio-item col-md-4 col-xs-6 ball hot">
                         <article class="animated fadeIn">
                             <div class="image-container">
                                 <div class="image">
@@ -158,7 +139,7 @@
                     <!-- // Item -->
 
                     <!-- Item -->
-                    <div class="portfolio-item col-md-4 col-xs-6 apparel">
+                    <div class="portfolio-item col-md-4 col-xs-6 apparel hot">
                         <article class="animated fadeIn">
                             <div class="image-container">
                                 <div class="image">
@@ -174,7 +155,7 @@
                     <!-- // Item -->
 
                     <!-- Item -->
-                    <div class="portfolio-item col-md-4 col-xs-6 table_court">
+                    <div class="portfolio-item col-md-4 col-xs-6 table_court hot">
                         <article class="animated fadeIn">
                             <div class="image-container">
                                 <div class="image">
@@ -188,11 +169,135 @@
                         </article>
                     </div>
                     <!-- // Item -->
+
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 apparel hot">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/uniform/1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">GA201</h4>
+                            <div class="tags">Жаккардовые ткани, мгновенное впитываемость</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+
+                    <!-- Item -->
+                    <div class="portfolio-item col-md-4 col-xs-6 table_court hot">
+                        <article class="animated fadeIn">
+                            <div class="image-container">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="img/list-items/table/1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="name">Suzhou Rainbow</h4>
+                            <div class="tags">Стол который использовался в 2015 на Чемпионате Мира</div>
+                        </article>
+                    </div>
+                    <!-- // Item -->
+
+
                 </div>
             </div>
         </section>
-        <!-- ITEMS END-->
 
+        <section class="we-sponsor">
+            <div class="container">
+                <div class="row">
+                    <div class="center main-title">
+                        <h1>Мы спонсируем</h1>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                        <div class="list-sponsors owl-theme owl-loaded">
+                            <ul class="owl-carousel sponsor-list">
+                                <li class="item">
+                                    <img class="img-responsive" src="img/sponsors/our/1.jpg">
+                                </li>
+                                <li class="item">
+                                    <img class="img-responsive" src="img/sponsors/our/2.jpg">
+                                </li>
+                                <li class="item">
+                                    <img class="img-responsive" src="img/sponsors/our/3.jpg">
+                                </li>
+                                <li class="item">
+                                    <img class="img-responsive" src="img/sponsors/our/4.jpg">
+                                </li>
+                                <li class="item">
+                                    <img class="img-responsive" src="img/sponsors/our/5.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="our-partners" class="our-sponsors">
+
+            <header class="page-header">
+                <h1>Наши <span>ПАРТНЕРЫ</span></h1>
+                <span>По всей Украине</span>
+            </header>
+
+            <section class="page-map">
+                        <div id="google_map"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-info col-md-3 col-xs-12 flipInX wow">
+                                    <div class="item">
+                                        <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                          +375 (29) 5777525
+                                    </div>
+                                    <div class="item">
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                        Карла Маркса 49
+                                    </div>
+                                    <div class="item">
+                                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                        mail@demo.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="owl-theme owl-loaded">
+                            <ul class="owl-carousel sponsor-list">
+                                <li class="item">
+                                    <img src="img/sponsors/1.jpg">
+                                </li>
+                                <li class="item">
+                                    <img src="img/sponsors/2.jpg">
+                                </li>
+                                <li class="item">
+                                    <img src="img/sponsors/3.jpg">
+                                </li>
+                                <li class="item">
+                                    <img src="img/sponsors/4.jpg">
+                                </li>
+                                <li class="item">
+                                    <img src="img/sponsors/5.jpg">
+                                </li>
+                                <li class="item">
+                                    <img src="img/sponsors/6.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <section class="news" id="news">
@@ -295,72 +400,57 @@
         </section>
 
 
-        <section id="our-partners" class="our-sponsors">
+        <section class="page-footer">
             <div class="container">
-                <header class="page-header">
-                    <h1>Наши <span>ПАРТНЕРЫ</span></h1>
-                    <span>По всему миру</span>
-                </header>
+                <div class="row footer-items">
+                    <div class="col-md-6">
+                        <div class="item-header">
+                            <h3>О нас</h3>
+                        </div>
+                        <div class="item-desc">
+                            <p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                        </div>
+                    </div>
 
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="owl-theme owl-loaded">
-                            <ul class="owl-carousel sponsor-list">
-                                <li class="item">
-                                    <img src="img/sponsors/1.jpg">
-                                </li>
-                                <li class="item">
-                                    <img src="img/sponsors/2.jpg">
-                                </li>
-                                <li class="item">
-                                    <img src="img/sponsors/3.jpg">
-                                </li>
-                                <li class="item">
-                                    <img src="img/sponsors/4.jpg">
-                                </li>
-                                <li class="item">
-                                    <img src="img/sponsors/5.jpg">
-                                </li>
-                                <li class="item">
-                                    <img src="img/sponsors/6.jpg">
-                                </li>
+                    <div class="col-md-3">
+                        <div class="item-header">
+                            <h3>Информация</h3>
+                        </div>
+                        <div class="item-desc">
+                            <ul class="link-list">
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Скидки</a></li>
+                                <li><a href="#">Спонсоры</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Доп. информация</a></li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="item-header">
+                            <h3>Контакты</h3>
+                        </div>
+                        <div class="item-desc">
+                            <div class="contact-list">
+                                <div class="item">
+                                    <span>Позвоните нам:</span>
+                                    <span>+375 (29) 5777525</span>
+                                </div>
+                                <div class="item">
+                                    <span>Напишите нам:</span>
+                                    <span>mail@demo.com</span>
+                                </div>
+                                <div class="item">
+                                    <span>Наш адрес:</span>
+                                    <span>Карла Маркса 49</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <section class="page-map">
-                    <div id="google_map"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="contact-info col-md-3 col-xs-12 flipInX wow">
-                                <div class="item">
-                                    <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                                      +375 (29) 5777525
-                                </div>
-                                <div class="item">
-                                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                                    Карла Маркса 49
-                                </div>
-                                <div class="item">
-                                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                    mail@demo.com
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-
-
-        <!--<section class="page-footer">-->
-            <!--<div class="container">-->
-                <!--<p class="footer-desc">DHS.COM.UA - 2016</p>-->
-            <!--</div>-->
-        <!--</section>-->
-
 
 
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>

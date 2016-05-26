@@ -157,9 +157,34 @@ var all = {
                 margin:10,
                 autoplay:true,
                 autoplayTimeout:2500,
-                autoplayHoverPause:true
+                autoplayHoverPause:true,
+                nav: false
             });
-        }
+
+            $("#owl-carousel-athletes").owlCarousel({
+                items: 1,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navigation: false,
+                autoplayTimeout:2500,
+                autoplayHoverPause:true,
+                margin:10,
+                lazyLoad:true,
+                autoHeight:true,
+                nav: false,
+                URLhashListener:true,
+                video: true
+                //items:1,
+                //loop:true,
+                //margin:10,
+                //autoplay:true,
+                //autoplayTimeout:2500,
+                //autoplayHoverPause:true,
+                //nav: false
+            });
+        },
+
+
     }
 }
 

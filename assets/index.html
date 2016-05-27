@@ -41,7 +41,7 @@
                         <li><a href="#google_map">Найти нас</a></li>
                     </ul>
                     <ul class="header-main-menu nav navbar-nav navbar-right">
-                        <li><a href="#about-us" class="btn-about-us">О нас</a></li>
+                        <li><a href="#athletes" class="btn-about-us">Чемпионы</a></li>
                     </ul>
                 </div>
             </div>
@@ -100,10 +100,10 @@
                     <li><a href="#" data-filter-by=".apparel">Униформа</a></li>
                 </ul>
 
-                <div class="forSearch">
-                    <input type="text" class="search-form" id="search-form" placeholder="Поиск..">
-                    <label for="search-form">&nbsp;</label>
-                </div>
+                <!--<div class="forSearch">-->
+                    <!--<input type="text" class="search-form" id="search-form" placeholder="Поиск..">-->
+                    <!--<label for="search-form">&nbsp;</label>-->
+                <!--</div>-->
 
                 <div id="isotope" class="row" style="position: relative; height: 644px;">
                     <!-- Item -->
@@ -204,6 +204,10 @@
 
 
                 </div>
+
+                <ul class="portfolio-filter">
+                    <li><a href="#" class="active">Все товары</a></li>
+                </ul>
             </div>
         </section>
 
@@ -396,26 +400,19 @@
             </div>
         </section>
 
-        <section class="athletes hidden-xs" id="athletes">
+        <section class="slider" id="athletes">
             <div class="container">
-                <header class="section-header">
-                    <h2>Чемпионы</h2>
-                </header>
+                <h2>Наши Чемпионы</h2>
 
-                <!-- ПО АЙДИ ЧЕКАТЬ КАРУСЕЛЬЕЕЕЬЬЕЬЕЬ-->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 boxed">
+                        <div id="slider-athletes" class="owl-carousel owl-theme">
+                            <div data-hash="wong" class="item">
+                                <img src="img/atletes/wang_liqin.jpg">
 
+                                <div class="desc">
+                                    <h4>Wong Ling</h4>
 
-                        <div id="owl-carousel-athletes" class="owl-theme owl-loaded owl-drag">
-
-                            <div class="item" data-hash="str1">
-                                <div class="col-md-offset-1 col-md-2">
-                                    <img src="img/atletes/wang_liqin.jpg">
-                                </div>
-
-                                <div class="item-desc col-md-offset-2 col-md-6 col-xs-12">
-                                    <h3 class="item-name">Wang Liqin</h3>
                                     Chinese men's table tennis athletes, the second Triple Crown winner of the World Championships. 6 Start playing years old, 13 years old to enter the Shanghai team, 15 -year-old was selected the national team, 1996 to enter the national team. , 2014 Nian 2 Yue 27 date when the withdrawal national team.
                                     <ul class="stats">
                                         <li>Nationality: Chinese</li>
@@ -427,14 +424,13 @@
                                 </div>
                             </div>
 
-                            <div class="item" data-hash="str2">
-                                <div class="col-md-offset-1 col-md-2">
-                                    <img src="img/atletes/wang_liqin.jpg">
-                                </div>
+                            <div data-hash="cheng" class="item">
+                                <img src="img/atletes/cheng.jpg">
 
-                                <div class="item-desc col-md-offset-2 col-md-6 col-xs-12">
-                                    <h3 class="item-name">Wang Liqin</h3>
-                                    Chinese men's table tennis athletes, the second Triple Crown winner of the World Championships. 6 Start playing years old, 13 years old to enter the Shanghai team, 15 -year-old was selected the national team, 1996 to enter the national team. , 2014 Nian 2 Yue 27 date when the withdrawal national team.
+                                <div class="desc">
+                                    <h4>Chen Meng</h4>
+                                    Chen Meng (Chinese: 陈梦; born 15 January 1994) is a Chinese table tennis player.[3] She is the winner of the 2011 World Junior Table Tennis Championships in girl's singles.[4]
+
                                     <ul class="stats">
                                         <li>Nationality: Chinese</li>
                                         <li>Birthplace: Shanghai</li>
@@ -445,16 +441,33 @@
                                 </div>
                             </div>
 
-                            <div class="item" data-hash="video">
-                                <div class="item-desc col-md-12 col-xs-12">
-                                    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+                            <div data-hash="van" class="item">
+                                <img src="img/atletes/wanghao.jpg">
+
+                                <div class="desc">
+                                    <h4>Ван Хао</h4>
+
+                                    Знаменитый китайский игрок в настольный теннис, двукратный олимпийский чемпион в команде и трёхкратный вице-чемпион Олимпийских игр в одиночном разряде (2004, 2008 и 2012), многократный чемпион мира и многократный обладатель Кубка мира. Хват ракетки перьевой, играет обеими сторонами ракетки.
+                                    <ul class="stats">
+                                        <li>Nationality: Chinese</li>
+                                        <li>Birthplace: Shanghai</li>
+                                        <li>Date of Birth: 1978 Nian . 6 Yue 18 Ri</li>
+                                        <li>Height: 186cm</li>
+                                        <li>Weight: 75kg</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
+            <ul class="pagination-athletes">
+                <li><a href="#wong">Wong Ling</a></li>
+                <li><a href="#cheng">Cheng Meng</a></li>
+                <li><a href="#van">Ван Хао</a></li>
+            </ul>
+
         </section>
 
         <section class="page-footer">
@@ -509,8 +522,7 @@
             </div>
         </section>
 
-
-        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>

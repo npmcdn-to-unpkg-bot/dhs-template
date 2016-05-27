@@ -120,8 +120,8 @@ var all = {
                 //узнаем высоту от начала страницы до блока на который ссылается якорь
                 if(id == "#home") {
                     var top = $(id).offset().top + -80;
-                } else if(id == "#about-us") {
-                    var top = $(id).offset().top + -60;
+                } else if(id == "#athletes") {
+                    var top = $(id).offset().top;
                 } else if(id == "#news") {
                     var top = $(id).offset().top + -60;
                 }
@@ -151,6 +151,38 @@ var all = {
         },
 
         carousel: function() {
+            //$("#owl-carousel-athletes").owlCarousel({
+            //    items: 1,
+            //    slideSpeed: 300,
+            //    paginationSpeed: 400,
+            //    navigation: false,
+            //    autoplayTimeout:2500,
+            //    autoplayHoverPause:true,
+            //    margin:10,
+            //    lazyLoad:true,
+            //    autoHeight:true,
+            //    nav: false,
+            //    URLhashListener:true,
+            //    video: true
+            //});
+
+            $('#slider-athletes').owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 250,
+                navText: [
+                    "<div class='prevAtl'>Prev</div>",
+                    "<div class='nextAtl'>Next</div>"
+                ],
+                loop:true,
+                margin:10,
+                nav:true,
+                center:true,
+                URLhashListener:true,
+                autoplayHoverPause:true
+            });
+
             $(".owl-carousel").owlCarousel({
                 items:5,
                 loop:true,
@@ -160,31 +192,7 @@ var all = {
                 autoplayHoverPause:true,
                 nav: false
             });
-
-            $("#owl-carousel-athletes").owlCarousel({
-                items: 1,
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                navigation: false,
-                autoplayTimeout:2500,
-                autoplayHoverPause:true,
-                margin:10,
-                lazyLoad:true,
-                autoHeight:true,
-                nav: false,
-                URLhashListener:true,
-                video: true
-                //items:1,
-                //loop:true,
-                //margin:10,
-                //autoplay:true,
-                //autoplayTimeout:2500,
-                //autoplayHoverPause:true,
-                //nav: false
-            });
         },
-
-
     }
 }
 

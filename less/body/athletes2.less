@@ -1,0 +1,93 @@
+.slider {
+  padding: 20px 0;
+  padding-bottom: 60px;
+  background: #f7f7f7;
+
+  h2 {
+    color: #b60002;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    padding: 10px 0;
+  }
+
+  .boxed {
+    float: none;
+    margin: 0 auto;
+    background: #eee;
+
+    .item {
+      padding: 10px 15px;
+      img {
+        float: left;
+        margin-right: 20px;
+        width: 360px !important;
+        height: 235px !important;
+      }
+
+      .desc .stats {
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+
+  }
+
+  .owl-stage {
+    transition: all 800ms ease !important;
+  }
+
+
+  .pagination-athletes {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      a {
+        display: block;
+        padding: 10px 15px;
+        margin: 10px 0;
+        background: #eee;
+        color: #b60002;
+        text-decoration: none;
+        box-shadow: -5px 0px 0px 0px #b60002;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+
+.nextAtl, .prevAtl {
+  position: absolute;
+}
+
+.nextAtl {
+  background: url('../img/right.png') 100% 0 no-repeat;
+  height: 128px;
+  width: 128px;
+  text-indent: -9999px;
+
+  top: 65px;
+  right: -150px;
+}
+
+.prevAtl {
+  background: url('../img/left.png') 100% 0 no-repeat;
+  height: 128px;
+  width: 128px;
+  text-indent: -9999px;
+
+  top: 65px;
+  left: -150px;
+}

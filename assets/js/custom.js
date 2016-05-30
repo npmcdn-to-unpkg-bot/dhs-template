@@ -183,7 +183,7 @@ var all = {
                 autoplayHoverPause:true
             });
 
-            $(".owl-carousel").owlCarousel({
+            $(".sponsor-list").owlCarousel({
                 items:5,
                 loop:true,
                 margin:10,

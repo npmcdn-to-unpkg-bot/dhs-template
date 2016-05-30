@@ -34,9 +34,18 @@ function init() {
                     infowindow.open(map, markers[1]);
                 });
 
-                var partners = document.getElementById('partners-list');
+                var partners = document.getElementById('partners-list'),
+                    backBtn = document.getElementById('backMap'),
+                    contactInfo = document.getElementsByClassName('contact-info')[0];
 
                 partners.addEventListener('click', zoom);
+                backBtn.addEventListener('click', start);
+
+                function start(e) {
+                    contactInfo.style.display = 'none';
+
+                    map.setZoom(5);
+                }
 
                 function zoom(e) {
                     var target = e.target;
@@ -60,6 +69,8 @@ function init() {
                             google.maps.event.removeListener(z);
                             smoothZoom(map, max, cnt + 1);
                         });
+
+                        contactInfo.style.display = 'block';
                         setTimeout(function(){map.setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
                     }
                 }

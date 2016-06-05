@@ -1,10 +1,42 @@
 .slider {
-  padding: 20px 0;
+  margin-top: -20px;
   padding-bottom: 60px;
-  background: #f7f7f7;
+  background: #000;
+
+  .athletes_bg {
+    margin-top: 20px;
+    padding-top: 5px;
+    background: #000 url('../img/team.jpg') no-repeat center -200%;
+    height: 455px;
+    position: relative;
+
+    .athletes_list {
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      margin-left: -650px;
+      height: 140px;
+
+      li {
+        float: left;
+        height: 100%;
+        a {
+          display: block;
+          width: 144px;
+          height: 100%;
+        }
+      }
+
+      li:nth-child(8) a, li:nth-child(9) a {
+        width: 114px;
+      }
+    }
+  }
+
 
   h2 {
     color: #b60002;
+    text-shadow: 1px 2px 5px black;
     text-align: center;
     text-transform: uppercase;
     font-size: 55px;

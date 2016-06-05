@@ -36,16 +36,15 @@
                     <ul class="header-main-menu nav navbar-nav">
                         <li><a href="#home">Главная</a></li>
                         <li><a href="#items-list">Товары</a></li>
-                        <li><a href="#our-partners">Партнеры</a></li>
                         <li><a href="#news">Новости</a></li>
-                        <li><a href="#google_map">Найти нас</a></li>
-                        <li><a href="#athletes">Чемпионы</a></li>
+                        <li><a href="#our-partners">Партнеры</a></li>
+                        <li><a href="#athletes">Чемпионы</a></l i>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section id="home" class="page-slider">
+        <section id="home" class="page-slider hidden-xs">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" id="slide1">
@@ -209,11 +208,11 @@
             </div>
         </section>
 
-        <section class="we-sponsor">
+        <section class="we-sponsor hidden-xs hidden-sm">
             <div class="container">
                 <div class="row">
                     <div class="center main-title">
-                        <h3>Мы спонсируем</h3>
+                        <!--<h3>Мы спонсируем</h3>-->
                     </div>
 
                     <div class="col-md-12 col-xs-12">
@@ -233,56 +232,6 @@
                                 </li>
                                 <li class="item">
                                     <img class="img-responsive" src="img/sponsors/our/5.jpg">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="our-sponsors" id="our-partners" >
-
-            <header class="page-header">
-                <h1>Наши <span>ПАРТНЕРЫ</span></h1>
-                <span>По всей Украине</span>
-            </header>
-
-            <section class="page-map">
-                        <div id="google_map"></div>
-
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="contact-info col-md-2 flipInX">
-                                    <button id="backMap" type="button">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-            </section>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="owl-theme owl-loaded">
-                            <ul id="partners-list" class="owl-carousel sponsor-list">
-                                <li class="item">
-                                    <img data-zoom="1" src="img/sponsors/1.jpg">
-                                </li>
-                                <li class="item">
-                                    <img data-zoom="2" src="img/sponsors/2.jpg">
-                                </li>
-                                <li class="item">
-                                    <img data-zoom="3" src="img/sponsors/3.jpg">
-                                </li>
-                                <li class="item">
-                                    <img data-zoom="4" src="img/sponsors/4.jpg">
-                                </li>
-                                <li class="item">
-                                    <img data-zoom="5" src="img/sponsors/5.jpg">
-                                </li>
-                                <li class="item">
-                                    <img data-zoom="6" src="img/sponsors/6.jpg">
                                 </li>
                             </ul>
                         </div>
@@ -388,10 +337,74 @@
             </div>
         </section>
 
-        <section class="slider" id="athletes">
-            <div class="container">
-                <h2>Наши Чемпионы</h2>
+        <section class="our-sponsors" id="our-partners" >
 
+            <header class="page-header">
+                <h1>Наши <span>ПАРТНЕРЫ</span></h1>
+                <span>По всей Украине</span>
+            </header>
+
+            <section class="page-map">
+                <div id="google_map"></div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-info col-md-2 flipInX">
+                            <button id="backMap" type="button">Назад</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="owl-theme owl-loaded">
+                            <ul id="partners-list" class="owl-carousel sponsor-list">
+                                <li class="item">
+                                    <img data-zoom="1" src="img/sponsors/1.jpg">
+                                </li>
+                                <li class="item">
+                                    <img data-zoom="2" src="img/sponsors/2.jpg">
+                                </li>
+                                <li class="item">
+                                    <img data-zoom="3" src="img/sponsors/3.jpg">
+                                </li>
+                                <li class="item">
+                                    <img data-zoom="4" src="img/sponsors/4.jpg">
+                                </li>
+                                <li class="item">
+                                    <img data-zoom="5" src="img/sponsors/5.jpg">
+                                </li>
+                                <li class="item">
+                                    <img data-zoom="6" src="img/sponsors/6.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider hidden-xs hidden-sm" id="athletes">
+
+            <div class="athletes_bg">
+                <h2>Наши Чемпионы</h2>
+                <ul class="athletes_list" id="athletes_list">
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#cheng"></a></li>
+                    <li data-href="#wong"><a href="#wong"></a></li>
+                    <li data-href="#van"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                    <li data-href="#cheng"><a href="#van"></a></li>
+                </ul>
+            </div>
+
+            <div class="container">
                 <div class="row">
                     <div class="col-md-10 boxed">
                         <div id="slider-athletes" class="owl-carousel owl-theme">
@@ -449,12 +462,6 @@
                     </div>
                 </div>
             </div>
-
-            <ul class="pagination-athletes">
-                <li><a href="#wong">Wong Ling</a></li>
-                <li><a href="#cheng">Cheng Meng</a></li>
-                <li><a href="#van">Ван Хао</a></li>
-            </ul>
 
         </section>
 

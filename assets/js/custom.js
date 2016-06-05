@@ -151,21 +151,6 @@ var all = {
         },
 
         carousel: function() {
-            //$("#owl-carousel-athletes").owlCarousel({
-            //    items: 1,
-            //    slideSpeed: 300,
-            //    paginationSpeed: 400,
-            //    navigation: false,
-            //    autoplayTimeout:2500,
-            //    autoplayHoverPause:true,
-            //    margin:10,
-            //    lazyLoad:true,
-            //    autoHeight:true,
-            //    nav: false,
-            //    URLhashListener:true,
-            //    video: true
-            //});
-
             $('#slider-athletes').owlCarousel({
                 items: 1,
                 autoplay: true,
@@ -193,6 +178,28 @@ var all = {
                 nav: false
             });
         },
+
+        athletesList: function() {
+            var id = document.getElementById('athletes_list');
+            id.addEventListener('mouseover', goClick, true);
+
+            function goClick(event) {
+                var target = event.target,
+                    href;
+
+                if (event.target.hasAttribute('data-href')) {
+                    href = target.getAttribute('data-href');
+                } else if (event.target.href) {
+                    href = target.href;
+                }
+
+                if(typeof href != 'undefined') {
+                    location.href = href;
+                }
+
+                event.preventDefault();
+            }
+        }
     }
 }
 
@@ -205,6 +212,7 @@ var init = {
         all.listitems.scroll();
         all.listitems.wow();
         all.listitems.carousel();
+        all.listitems.athletesList();
     }
 };
 
